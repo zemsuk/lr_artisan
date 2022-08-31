@@ -1,0 +1,26 @@
+{
+    "name": "zems/lrartisan",
+    "description": "Zems artisan Command From Frontend",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hossain Jamir",
+            "email": "ukzems@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            
+            "Zems\\lrArtisan\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Zems\\lrArtisan\\ZemsArtisanProvider"]
+        }
+    }
+}
