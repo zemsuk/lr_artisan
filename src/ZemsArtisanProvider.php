@@ -13,7 +13,7 @@ class ZemsArtisanProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->LoadViewsFrom(__DIR__.'/views', 'crudapi');
+        $this->LoadViewsFrom(__DIR__.'/views', 'lrartisan'); 
         $this->app->singleton(ZemsArtisan::class, function(){
             return new ZemsArtisan();
         });
@@ -26,6 +26,7 @@ class ZemsArtisanProvider extends ServiceProvider
      */
     public function boot()
     {
+        include __DIR__.'/include/routes.php';
         // dd("Hi from Zems Package");
     }
 }
